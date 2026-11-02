@@ -4,3 +4,36 @@
 
 /* Dance Flow-style compact Muscle Studio technique library */
 .muscle-tech-list{background:#fff;border-radius:11px;padding:0 8px}.muscle-tech-row{display:flex;align-items:center;gap:7px;min-height:55px;border-bottom:1px solid #eee9f1;padding:6px 0;min-width:0}.muscle-tech-row:last-child{border-bottom:0}.muscle-tech-photo{width:42px;height:42px;object-fit:cover;border-radius:7px;flex-shrink:0}.muscle-tech-main{display:flex;flex:1;min-width:0;flex-direction:column;align-items:flex-start;gap:3px;text-align:left;background:none;border:0;padding:5px 0}.muscle-tech-main b{font-size:13px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.muscle-tech-main small{font-size:10px;color:#93889e;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.muscle-tech-status{width:auto;max-width:108px;min-width:0;flex-shrink:0;background:#eee7f6;border:0;border-radius:9px;font-size:11px;padding:7px 3px;color:#7855a8}@media(max-width:375px){.muscle-tech-row{gap:4px}.muscle-tech-status{max-width:96px}}
+
+/* Bookmark practice and edit studio */
+.bookmark-studio{min-width:0}.bookmark-studio h3{margin:12px 0 9px}
+.studio-player{position:relative;width:100%;aspect-ratio:16/9;background:#17121d;border-radius:10px;overflow:hidden;margin:8px 0 13px}
+.studio-player iframe,.studio-player>div{width:100%;height:100%;border:0}
+.studio-chips{display:flex;gap:6px;overflow:auto;padding:4px 0 10px}
+.studio-chips button{flex-shrink:0;border:1px solid #e9e2ef;border-radius:9px;background:#f8f5fb;color:#5b4c70;padding:7px 10px;font-size:12px;min-width:75px}
+.studio-chips button.selected{background:#e7d8f3;color:#7046a0}
+.studio-chips small{display:block;color:#93829f;font-size:10px;margin-top:3px}
+.studio-panel{padding:12px;border-radius:11px;background:#faf8fc;min-width:0}
+.studio-panel .field{margin-top:10px}.studio-times{display:grid;grid-template-columns:1fr 1fr;gap:8px}.studio-times button{margin-top:5px}
+.studio-actions{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin:8px 0 12px}
+.studio-actions button{min-width:0}.studio-history,.skill-evaluation-history p{padding:10px 0;border-bottom:1px solid #eae4f0;margin:0}
+.studio-history small,.skill-evaluation-history small{display:block;color:#97869e;font-size:11px;margin-bottom:5px}
+.studio-history span,.skill-evaluation-history span{display:block;white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px}
+.skill-evaluation-history{background:#f8f6fa;border-radius:10px;padding:12px;margin-top:10px;max-height:250px;overflow:auto}
+.skill-evaluation-history>b{display:block;margin-bottom:8px;font-size:12px}
+@media(max-width:370px){.studio-panel{padding:8px}}
+
+/* Practice player and per-segment cautions */
+.studio-video-wrap{position:relative;min-width:0}.studio-placeholder{height:100%;display:grid;place-items:center;text-align:center;color:#fff;padding:16px;font-size:12px}.studio-caution-overlay{position:absolute;top:16px;left:10px;right:10px;max-height:35%;overflow:hidden;padding:9px 11px;border-radius:8px;background:rgba(25,20,33,.88);color:white;pointer-events:none;display:flex;gap:8px;align-items:flex-start;white-space:pre-wrap;overflow-wrap:anywhere}.studio-caution-overlay b{color:#e7d4fa;font-size:11px;flex:none}.studio-caution-overlay span{font-size:12px;line-height:1.4}
+
+/* Dance Flow parity: responsive centered player and zoom in both modes */
+.studio-video-wrap{width:100%;max-width:640px;margin-left:auto;margin-right:auto;align-self:center}
+.studio-video-wrap .studio-player{width:100%;margin:8px 0 9px;overflow:hidden}
+.studio-video-wrap.zoomed .studio-player iframe{transform:scale(1.45);transform-origin:center center}
+.studio-zoom-controls{display:flex;justify-content:center;align-items:center;gap:9px;flex-wrap:wrap;margin:0 0 12px}
+.studio-zoom-controls button{background:#eee8f5;color:#7252a2;border:0;border-radius:7px;padding:7px 13px;font-size:12px;font-weight:650}
+.studio-zoom-controls button.selected{background:#dcd0ef;color:#624292}
+.studio-zoom-controls small{color:#91859e;font-size:10px}
+@media(max-width:699px){.studio-video-wrap{max-width:100%}}
+
+.muscle-subtabs{display:flex;gap:5px;padding:4px;border-radius:10px;background:#eee7f7;margin:8px 0 12px}.muscle-subtabs button{flex:1;background:transparent;border:0;padding:9px;font-size:12px;border-radius:7px;color:#776790}.muscle-subtabs button.selected{background:white;color:#644091;font-weight:700}.muscle-bookmark-thumb{width:62px;height:42px;border:0;background:#eee8f5;border-radius:7px;overflow:hidden;padding:0;flex:none}.muscle-bookmark-thumb img{width:100%;height:100%;object-fit:cover}.muscle-skill-history{background:#faf8fc;padding:9px;border-radius:8px}.muscle-skill-history p{border-bottom:1px solid #eee7f4;font-size:11px}.muscle-skill-history small,.muscle-skill-history span{display:block;margin:5px 0}.bookmark-studio{max-height:75dvh;overflow-y:auto;padding:8px 3px 20px}.studio-video-wrap{max-width:640px;margin:auto}
