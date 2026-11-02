@@ -13,6 +13,8 @@ export default function LearningNotes({skills=[],bookmarks=[],evaluations=[],kin
    return [...caution,...reviews]
  }),[matching,bookmarks,evaluations]);
  const shown=entries.filter(x=>(noteType==='전체'||x.type===noteType)&&[x.skill,x.category,x.subcategory,x.content,x.bookmarkTitle].join(' ').toLowerCase().includes(query.toLowerCase()));
+ const [copied,setCopied]=useState('');
+ const copyNote=async (note,key)=>{try{if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(note)}else{const el=document.createElement('textarea');el.value=note;el.style.position='fixed';el.style.opacity='0';document.body.appendChild(el);el.select();const ok=document.execCommand('copy');el.remove();if(!ok)throw Error('copy');}setCopied(key)}catch{setCopied('error')}};
  const download=()=>{const output={schemaVersion:1,app:kind,exportedAt:new Date().toISOString(),filters:{category:major,subcategory:minor,skillId,type:noteType,search:query},count:shown.length,notes:shown};const blob=new Blob([JSON.stringify(output,null,2)],{type:'application/json;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=kind+'-learning-notes-'+new Date().toISOString().slice(0,10)+'.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)};
  return <div className="learning-notes">
   <div className="learning-notes-filters">
@@ -23,7 +25,7 @@ export default function LearningNotes({skills=[],bookmarks=[],evaluations=[],kin
   </div>
   <input className="learning-notes-search" value={query} onChange={e=>setQuery(e.target.value)} placeholder="기술·메모 내용 검색"/>
   <div className="learning-notes-header"><b>학습 노트 {shown.length}개</b><button type="button" onClick={download}>JSON 다운로드</button></div>
-  {shown.map((n,i)=><div className="learning-notes-entry" key={n.type+'-'+n.skillId+'-'+i}>{n.representativePhoto&&<img src={n.representativePhoto} alt="" loading="lazy"/>}<div><b>{n.skill}</b><small>{n.category} · {n.subcategory} · {n.type}</small>{n.bookmarkTitle&&<small>{n.bookmarkTitle} · {n.start}–{n.end}</small>}{n.at&&<small>{new Date(n.at).toLocaleDateString('ko-KR')} · {n.status||''}</small>}<p>{n.content}</p></div></div>)}
+  {shown.map((n,i)=><div className="learning-notes-entry" key={n.type+'-'+n.skillId+'-'+i}>{n.representativePhoto&&<img src={n.representativePhoto} alt="" loading="lazy"/>}<div><b>{n.skill}</b><small>{n.category} · {n.subcategory} · {n.type}</small>{n.bookmarkTitle&&<small>{n.bookmarkTitle} · {n.start}–{n.end}</small>}{n.at&&<small>{new Date(n.at).toLocaleDateString('ko-KR')} · {n.status||''}</small>}<div className="learning-notes-copyrow"><p>{n.content}</p><button type="button" aria-label="메모 복사" onClick={()=>copyNote(n.content,n.type+'-'+n.skillId+'-'+i)}>{copied===n.type+'-'+n.skillId+'-'+i?'복사됨':'복사'}</button></div></div></div>)}
   {!shown.length&&<p className="learning-notes-empty">선택한 조건에 해당하는 메모가 없어.</p>}
  </div>
 }
