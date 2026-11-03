@@ -2,7 +2,7 @@ import LearningNotes from './LearningNotes';
 import{uploadStudioPhoto,StudioImage,StorageUsage}from'./studioPhotoStorage.jsx';
 import React,{useEffect,useMemo,useState} from 'react';
 import {createRoot} from 'react-dom/client';
-import {Dumbbell,Home,BookOpen,ListChecks,CalendarRange,ChartNoAxesColumn,Plus,Play,Check,ChevronRight,ChevronLeft,Trash2,Copy,Edit3,X,RotateCcw,Settings2,Timer,Pause,Save,Search,TrendingUp,ArrowUp,Download} from 'lucide-react';
+import {Dumbbell,Home,BookOpen,ListChecks,CalendarRange,ChartNoAxesColumn,Plus,Play,Check,ChevronRight,ChevronLeft,Trash2,Copy,Edit3,X,RotateCcw,Settings2,Timer,Pause,Save,Search,TrendingUp,ArrowUp,Download,Bookmark} from 'lucide-react';
 import './style.css';
 import {supabase,isSupabaseConfigured} from './supabase';
 import AuthScreen from './AuthScreen';import BookmarkStudio,{videoThumb} from './BookmarkStudio';
