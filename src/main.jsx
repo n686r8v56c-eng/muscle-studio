@@ -19,7 +19,7 @@ const n=(v,def=0)=>Number.isFinite(Number(v))?Number(v):def;
 const today=()=>new Date().toISOString().slice(0,10);
 const displayDate=s=>s?new Date(s+'T00:00:00').toLocaleDateString('ko-KR',{month:'short',day:'numeric'}):'';
 function App({initialData,onDataChange,onLogout,onImportLocal,email}){
-const [db,setDb]=useState(()=>initialData),[tab,setTab]=useState('home'),[area,setArea]=useState('전체 부위'),[modal,setModal]=useState(null),[session,setSession]=useState(null),[toast,setToast]=useState(''),[search,setSearch]=useState(''),[techSub,setTechSub]=useState('skills');
+const [db,setDb]=useState(()=>initialData),[tab,setTab]=useState('home'),[area,setArea]=useState('전체 부위'),[modal,setModal]=useState(null),[session,setSession]=useState(null),[toast,setToast]=useState(''),[search,setSearch]=useState(''),[techSub,setTechSub]=useState('bookmarks');
 const update=fn=>setDb(prev=>{const x=structuredClone(prev);fn(x);return x});
 useEffect(()=>{onDataChange(db)},[db]);
 const show=s=>{setToast(s);setTimeout(()=>setToast(''),2600)};
