@@ -45,3 +45,11 @@
 .linked-caution-list{padding:10px;margin:9px 0;background:#f8f5fb;border-radius:10px}.linked-caution-list small,.linked-caution-list span{display:block;font-size:11px}.linked-caution-list p{margin:8px 0;white-space:pre-wrap}
 
 .studio-storage-usage{display:grid;gap:4px;background:#f3edf9;border-radius:9px;padding:10px;margin:9px 0;font-size:12px}.studio-storage-usage small{font-size:11px;color:#81718e}
+
+
+/* Contextual drill-down: item → exactly linked video bookmarks */
+.linked-bookmark-btn{flex:none;display:inline-flex;align-items:center;justify-content:center;gap:4px;min-width:37px;height:32px;padding:5px 7px;border:0;border-radius:8px;background:#eee7f8;color:#715199;font-size:11px;font-weight:750;white-space:nowrap;cursor:pointer}
+.linked-bookmark-btn svg{flex:none}
+.linked-bookmark-filter{display:flex;align-items:center;justify-content:space-between;gap:6px;padding:9px 10px;margin:8px 0;background:#f1eaf9;border-radius:9px;color:#705199;font-size:11px;min-width:0}
+.linked-bookmark-filter span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0;flex:1}
+.linked-bookmark-filter button{background:#fff;color:#705199;border:0;border-radius:7px;padding:7px 9px;font-size:11px;white-space:nowrap;flex:none;cursor:pointer}
