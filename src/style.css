@@ -43,3 +43,5 @@
 .muscle-photo-editor{display:flex;flex-direction:column;gap:8px;padding-top:6px}.muscle-photo-upload{align-self:flex-start;background:#eee6f7;color:#7852aa;padding:8px 12px;border-radius:8px;font-size:12px;cursor:pointer}.muscle-photo-upload input{display:none}.muscle-photo-gallery{display:flex;gap:8px;overflow-x:auto;padding:3px 0}.muscle-photo-item{flex:0 0 112px;border:1px solid #e8dfed;border-radius:9px;overflow:hidden;background:#fff}.muscle-photo-item>img{width:112px;height:106px;object-fit:cover}.muscle-photo-item>div{display:flex;justify-content:space-around}.muscle-photo-item button{border:0;background:transparent;color:#8064a4;padding:7px 10px}.muscle-photo-item button.picked{color:#7751b2}.muscle-photo-editor>small{color:#978aa4;font-size:10px}
 
 .linked-caution-list{padding:10px;margin:9px 0;background:#f8f5fb;border-radius:10px}.linked-caution-list small,.linked-caution-list span{display:block;font-size:11px}.linked-caution-list p{margin:8px 0;white-space:pre-wrap}
+
+.studio-storage-usage{display:grid;gap:4px;background:#f3edf9;border-radius:9px;padding:10px;margin:9px 0;font-size:12px}.studio-storage-usage small{font-size:11px;color:#81718e}
