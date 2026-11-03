@@ -137,3 +137,5 @@ function AuthRoot(){const [user,setUser]=useState(null),[loading,setLoading]=use
  return <><App key={user.id} initialData={remote} onDataChange={save} onLogout={()=>supabase.auth.signOut()} email={user.email} onImportLocal={hasLocal?()=>setHasLocal(false):null}/>{busy&&<div className="sync-label">동기화 중…</div>}{error&&<div className="sync-error" role="alert">{error}</div>}</>
 }
 createRoot(document.getElementById('root')).render(<AuthRoot/>);
+
+import './mobile-readability.css';

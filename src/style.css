@@ -53,3 +53,267 @@
 .linked-bookmark-filter{display:flex;align-items:center;justify-content:space-between;gap:6px;padding:9px 10px;margin:8px 0;background:#f1eaf9;border-radius:9px;color:#705199;font-size:11px;min-width:0}
 .linked-bookmark-filter span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0;flex:1}
 .linked-bookmark-filter button{background:#fff;color:#705199;border:0;border-radius:7px;padding:7px 9px;font-size:11px;white-space:nowrap;flex:none;cursor:pointer}
+
+
+/* Phone text minimums; existing larger type remains unchanged. */
+@media (max-width: 749px) {
+    input {
+        font-size: 16px !important
+    }
+    select {
+        font-size: 16px !important
+    }
+    textarea {
+        font-size: 16px !important
+    }
+    .branding b {
+        font-size: 16px !important
+    }
+    .branding small {
+        font-size: 13px !important
+    }
+    .header-tools select {
+        font-size: 16px !important
+    }
+    .nav button {
+        font-size: 13px !important
+    }
+    .section-head h1 {
+        font-size: 19px !important
+    }
+    .section-head h2 {
+        font-size: 16px !important
+    }
+    .section-head p {
+        font-size: 14px !important
+    }
+    .card b {
+        font-size: 16px !important
+    }
+    .card p {
+        font-size: 14px !important
+    }
+    .line strong {
+        font-size: 15px !important
+    }
+    .daytag {
+        font-size: 14px !important
+    }
+    .kpis small {
+        font-size: 13px !important
+    }
+    .kpis b {
+        font-size: 19px !important
+    }
+    .kpis em {
+        font-size: 13px !important
+    }
+    .primary {
+        font-size: 16px !important
+    }
+    .mini-primary {
+        font-size: 14px !important
+    }
+    .outline {
+        font-size: 15px !important
+    }
+    .textbtn {
+        font-size: 15px !important
+    }
+    .chip {
+        font-size: 13px !important
+    }
+    .chips span {
+        font-size: 13px !important
+    }
+    .description {
+        font-size: 14px !important
+    }
+    .rec {
+        font-size: 14px !important
+    }
+    .textlink {
+        font-size: 14px !important
+    }
+    .hint {
+        font-size: 14px !important
+    }
+    .empty {
+        font-size: 15px !important
+    }
+    .set-header {
+        font-size: 13px !important
+    }
+    .setrow span {
+        font-size: 15px !important
+    }
+    .restbar {
+        font-size: 16px !important
+    }
+    .restbar button {
+        font-size: 14px !important
+    }
+    .totals {
+        font-size: 16px !important
+    }
+    .week-scroll button {
+        font-size: 14px !important
+    }
+    .modal-top strong {
+        font-size: 16px !important
+    }
+    .editor label {
+        font-size: 15px !important
+    }
+    .step-edit>strong {
+        font-size: 15px !important
+    }
+    .four label {
+        font-size: 13px !important
+    }
+    .toast {
+        font-size: 15px !important
+    }
+    @media (max-width:360px) {
+        .branding b {
+            font-size: 16px !important
+        }
+    }
+    @media (max-width:360px) {
+        .kpis b {
+            font-size: 16px !important
+        }
+    }
+    .auth-brand h1 {
+        font-size: 20px !important
+    }
+    .auth-brand p {
+        font-size: 15px !important
+    }
+    .auth-card h2 {
+        font-size: 17px !important
+    }
+    .auth-card label {
+        font-size: 15px !important
+    }
+    .auth-tabs button {
+        font-size: 16px !important
+    }
+    .auth-bottom {
+        font-size: 15px !important
+    }
+    .auth-error {
+        font-size: 15px !important
+    }
+    .auth-message {
+        font-size: 15px !important
+    }
+    .sync-label {
+        font-size: 14px !important
+    }
+    .sync-error {
+        font-size: 14px !important
+    }
+    .muscle-tech-main b {
+        font-size: 16px !important
+    }
+    .muscle-tech-main small {
+        font-size: 13px !important
+    }
+    .muscle-tech-status {
+        font-size: 14px !important
+    }
+    .studio-chips button {
+        font-size: 15px !important
+    }
+    .studio-chips small {
+        font-size: 13px !important
+    }
+    .studio-history small {
+        font-size: 14px !important
+    }
+    .skill-evaluation-history small {
+        font-size: 14px !important
+    }
+    .studio-history span {
+        font-size: 15px !important
+    }
+    .skill-evaluation-history span {
+        font-size: 15px !important
+    }
+    .skill-evaluation-history>b {
+        font-size: 15px !important
+    }
+    .studio-placeholder {
+        font-size: 15px !important
+    }
+    .studio-caution-overlay b {
+        font-size: 14px !important
+    }
+    .studio-caution-overlay span {
+        font-size: 15px !important
+    }
+    .studio-zoom-controls button {
+        font-size: 15px !important
+    }
+    .studio-zoom-controls small {
+        font-size: 13px !important
+    }
+    .muscle-subtabs button {
+        font-size: 15px !important
+    }
+    .muscle-skill-history p {
+        font-size: 14px !important
+    }
+    .bookmark-studio .subtabs button {
+        font-size: 15px !important
+    }
+    .bookmark-studio .field>span {
+        font-size: 14px !important
+    }
+    .bookmark-studio .field input {
+        font-size: 16px !important
+    }
+    .bookmark-studio .field select {
+        font-size: 16px !important
+    }
+    .bookmark-studio .field textarea {
+        font-size: 16px !important
+    }
+    .bookmark-studio .sectionhead h3 {
+        font-size: 16px !important
+    }
+    .bookmark-studio .secondary {
+        font-size: 15px !important
+    }
+    .bookmark-studio .secondary.small {
+        font-size: 14px !important
+    }
+    .muscle-photo-upload {
+        font-size: 15px !important
+    }
+    .muscle-photo-editor>small {
+        font-size: 13px !important
+    }
+    .linked-caution-list small {
+        font-size: 14px !important
+    }
+    .linked-caution-list span {
+        font-size: 14px !important
+    }
+    .studio-storage-usage {
+        font-size: 15px !important
+    }
+    .studio-storage-usage small {
+        font-size: 14px !important
+    }
+    .linked-bookmark-btn {
+        font-size: 14px !important
+    }
+    .linked-bookmark-filter {
+        font-size: 14px !important
+    }
+    .linked-bookmark-filter button {
+        font-size: 14px !important
+    }
+}

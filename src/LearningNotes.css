@@ -8,3 +8,35 @@
 .learning-notes-copyrow p{flex:1;min-width:0}
 .learning-notes-video{flex:none;display:grid;place-items:center;width:32px;height:32px;background:#eee8f5;color:#7856a3;border-radius:8px;margin-top:6px;text-decoration:none}
 .learning-notes-entry img{width:58px;height:58px;aspect-ratio:1;object-fit:cover}
+
+
+/* Phone text minimums; existing larger type remains unchanged. */
+@media (max-width: 749px) {
+    .learning-notes-filters select {
+        font-size: 16px !important
+    }
+    .learning-notes-search {
+        font-size: 16px !important
+    }
+    .learning-notes-header b {
+        font-size: 16px !important
+    }
+    .learning-notes-header button {
+        font-size: 15px !important
+    }
+    .learning-notes-entry b {
+        font-size: 16px !important
+    }
+    .learning-notes-entry small {
+        font-size: 13px !important
+    }
+    .learning-notes-entry p {
+        font-size: 15px !important
+    }
+    .learning-notes-empty {
+        font-size: 15px !important
+    }
+    .learning-notes-feedback {
+        font-size: 14px !important
+    }
+}
